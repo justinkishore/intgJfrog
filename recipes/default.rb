@@ -9,17 +9,17 @@
 #gem_package 'curl' do
 #  action :install;
 #end
-directory '/tempy' do
+directory '/tempyy' do
   action :create
 end
 
-cookbook_file "/tempy/curl.exe" do
+cookbook_file "/tempyy/curl.exe" do
   source "curl.exe"
 end
 
 execute "curl" do
   #user "root"
-  cwd "/tempy"
+  cwd "/tempyy"
   #command "curl.exe -u admin:iljkishore87 -o \"C:/Users/Kishore/Downloads/MSI.msi\" -O \"https://kishore.jfrog.io/kishore/ext-release-local/NugetDemo/MSI.msi\""
   command "curl.exe -u admin:iljkishore87 -o \"C://Users/kishorewin/Desktop/MSI.msi\" -O \"https://kishore.jfrog.io/kishore/ext-release-local/NugetDemo/MSI.msi\""
 end
